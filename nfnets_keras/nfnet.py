@@ -82,6 +82,7 @@ nonlinearities = {
 
 class NFNet(tf.keras.Model):
     variant_dict = nfnet_params
+    self.variant_dict = nfnet_params
 
     def __init__(self, num_classes=None, variant = 'F0', width = 1.0, se_ratio = 0.5, alpha = 0.2, stochdepth_rate = 0.1, drop_rate = None, activation = 'gelu', fc_init = None, final_conv_mult = 2, final_conv_ch = None, use_two_convs = True, name = 'NFNet', include_top = True):
 
